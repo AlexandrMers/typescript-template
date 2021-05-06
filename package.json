@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile": "./node_modules/.bin/tsc",
+    "compile": "./node_modules/.bin/tsc ./src/index.ts",
     "start": "./node_modules/.bin/nodemon --watch \"src/**\" --ext \"ts,json\" --ignore \"src/**/*.spec.ts\" --exec \"ts-node src/index.ts\"",
     "build": "./node_modules/.bin/ts-node ./src/index.ts",
     "lint": "./node_modules/.bin/eslint '*/**/*.{js,ts}' --quiet --fix"
